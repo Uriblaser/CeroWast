@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CeroWast - Lo bueno no se bota. Se rescata.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f4fdf7;
+    }
+    header {
+      background-color: #2e7d32;
+      padding: 1.5rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #c8e6c9;
+    }
+    .hero {
+      background: linear-gradient(to right, #4caf50cc, #81c784cc), url('https://source.unsplash.com/1400x800/?sustainability,groceries') no-repeat center center;
+      background-size: cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+    .hero h2 {
+      z-index: 1;
+      background-color: rgba(0,0,0,0.6);
+      padding: 1.2rem 2rem;
+      border-radius: 12px;
+      font-size: 2.5rem;
+      max-width: 800px;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #2e7d32;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .feature-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .feature-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .impact {
+      background: linear-gradient(to right, #1b5e20aa, #388e3caa), url('https://source.unsplash.com/1400x800/?green,eco') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+    .impact h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .impact p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CeroWast</h1>
+    <nav>
+      <a href="#quees">¿Qué es?</a>
+      <a href="#como">Funcionalidad</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Rescatamos alimentos. Reducimos desperdicio. Cuidamos el planeta.</h2>
+  </section>
+
+  <section class="section" id="quees">
+    <h2>¿Qué es CeroWast?</h2>
+    <p style="text-align: center; font-size: 1.1rem;">CeroWast es una plataforma digital que conecta a comercios con excedentes alimentarios y consumidores conscientes. A través de nuestra app, ayudamos a rescatar alimentos que están próximos a vencer y los ofrecemos a menor precio, promoviendo el consumo responsable y la economía circular.</p>
+  </section>
+
+  <section class="section" id="como">
+    <h2>¿Cómo funciona?</h2>
+    <div class="features">
+      <div class="feature-card">
+        <img src="https://source.unsplash.com/700x400/?grocery,market" alt="Publicación de productos">
+        <h3>1. El comercio publica alimentos</h3>
+        <p>Comercios suben a la app productos que deben venderse pronto.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://source.unsplash.com/700x400/?app,map" alt="Exploración geolocalizada">
+        <h3>2. El usuario explora la app</h3>
+        <p>Las personas buscan ofertas en su zona en tiempo real.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://source.unsplash.com/700x400/?pickup,food" alt="Compra y retiro">
+        <h3>3. Compra y retira</h3>
+        <p>Se realiza la compra desde la app y el retiro en el comercio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact" id="impacto">
+    <h2>Impacto positivo</h2>
+    <p>+10.000 kg de alimentos rescatados<br>+25 toneladas de CO₂ evitadas<br>+100 comercios aliados<br>Una comunidad que elige consumir con conciencia</p>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align: center; font-size: 1.1rem;">¿Tienes un comercio y quieres unirte a CeroWast?<br>Escríbenos a <strong>contacto@cerowast.com</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 CeroWast. Desarrollado con propósito sostenible.
+  </footer>
+</body>
+</html>
